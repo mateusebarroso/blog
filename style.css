@@ -1,0 +1,511 @@
+:root{
+    --colorYellow: yellow;
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-card: #1a1a24;
+    --accent: #64ffda;
+    --accent-hover: #4cd6b3;
+    --text-primary: #e6e6e6;
+    --text-secondary: #a0a0a0;
+    --text-muted: #6b6b7b;
+    --border: #2a2a3a;
+    --bg-trans: ;
+    --gradient: linear-gradient(135deg, #64ffda 0%, #00b4d8 100%);
+     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playwrite DE SAS", cursive;
+    
+}
+
+.container{
+  max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+   
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+     background: rgba(10, 10, 15, 0.85);
+    
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-content{
+        width: 30%;
+     
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+   font-family: monospace;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}   
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+
+.apresentacao-autor{
+  
+    
+    max-width: 560px;
+    margin-top: 100px;
+    margin-left: 560px;
+    padding: 20px;
+  
+   
+   
+}
+.apresentacao-autor p{
+      font-size: 2rem;
+      line-height: 1.6;
+        
+}
+
+ a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+   
+}
+
+ a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a:hover::after {
+    width:100%;
+}
+
+ article p{
+    width: 531px;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+ article h1{
+    color: #264de4;
+ }
+
+.hero-image {
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+.image-wrapper {
+    position: relative;
+    width: 350px;
+    height: 470px;
+     animation: pulse 1s infinite;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    border: 3px solid var(--border);
+}
+
+.image-decoration {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+    z-index: 1;
+    opacity: 0.3;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+     50%{
+        transform: rotate(10deg)
+     }
+}
+.sobretxt{
+    font-size: 2rem;
+    color : var(--accent-hover);
+}
+
+#sobre{
+    max-width: 560px;
+    position: relative;
+  
+   
+
+}
+
+
+.assunto h2{
+    font-size: 2rem;
+    color : var(--accent-hover);
+
+    animation: jump 1s infinite;
+
+
+
+}
+
+
+@keyframes jump {
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Query para Galaxy A10s e dispositivos móveis até 400px */
+@media (max-width: 400px) {
+    /* Ajustes gerais */
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+     
+    }
+
+    /* Navbar responsivo para mobile */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 55px;
+        padding: 0;
+        background: rgba(10, 10, 15, 0.98);
+        border-bottom: 1px solid var(--border);
+        z-index: 1000;
+    }
+
+    .nav-content {
+        width: 100%;
+        padding: 0.5rem 12px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        flex-wrap: nowrap;
+        position: relative;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        gap: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        position: absolute;
+        top: -50px;
+        left:-50px;
+        margin-top: 2rem;
+        
+    }
+    ul.active{
+        display: block;
+       background-color: rgba(26, 26, 36, 0.5) ;
+        position: absolute;
+        top: 25px;
+       
+        
+    }
+    .nav-links li {
+        
+         margin-top: 1.5rem;
+        flex-shrink: 1;
+        min-width: auto;
+        text-align: center;
+     
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+        font-weight: 400;
+        display: block;
+        padding: 0.4rem 0.3rem;
+        color: var(--text-secondary);
+        white-space: wrap;
+    }
+
+    .nav-links a:hover {
+        color: var(--accent);
+    }
+    .menu{
+        display: flex;
+        width: 48px;
+        height: 48px;
+        background:url("menu.svg");
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+ /* Conteúdo principal com espaço para navbar */
+    .content-main {
+        margin-top: 70px;
+        padding-top: 0;
+        width: 100vw;
+        height: 100%;
+    }
+   
+    /* Apresentação do autor */
+    .apresentacao-autor {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        
+        margin: 0;
+        margin-top: 20rem;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .apresentacao-autor h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.7rem;
+    }
+    strong{
+        color: var(--accent);
+    }
+    .apresentacao-autor h2 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .apresentacao-autor p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    /* Box de informação "Sobre o Autor" */
+    .bg {
+        background-color: var(--bg-card);
+        padding: 12px;
+        border-radius: 8px;
+        margin: 15px 0;
+    }
+
+    .sobretxt {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .bg p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    /* Artigos */
+    article {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    article h1 {
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    article p {
+        width: 100%;
+        font-size: 0.85rem;
+        line-height: 1.6;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    #sobre {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    #sobre p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    #blog p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    /* Seção "Assunto" */
+    .assunto {
+        width: 100%;
+        padding: 15px 10px;
+        margin: 20px 0;
+        background: rgba(26, 26, 36, 0.5);
+        border-radius: 8px;
+    }
+
+    .assunto h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .assunto p {
+        font-size: 0.85rem;
+        text-align: left;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+
+    /* Código pré-formatado */
+    .assunto pre {
+        font-size: 0.65rem;
+        overflow-x: auto;
+        padding: 10px;
+        background: var(--bg-card);
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        margin: 12px 0;
+        line-height: 1.4;
+    }
+
+    .assunto code {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.65rem;
+    }
+
+    /* Imagem do perfil */
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+
+    .image-wrapper {
+        width: 200px;
+        height: 280px;
+        position: relative;
+    }
+
+    .profile-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 2px solid var(--border);
+    }
+
+    .image-decoration {
+        top: 10px;
+        left: 10px;
+        border-radius: 12px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px 12px;
+        margin-top: 30px;
+        border-top: 1px solid var(--border);
+        background: rgba(10, 10, 15, 0.85);
+      
+    }
+
+    footer p,
+    footer h4 {
+        font-size: 0.8rem;
+        margin: 5px 0;
+        line-height: 1.4;
+    }
+
+    footer p {
+        color: var(--text-secondary);
+    }
+}
+
+    

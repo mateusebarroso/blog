@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevBlog</title>
+</head>
+<body id="home">
+    <div class="container">
+        
+        <nav class="navbar" >
+             <div class="nav-content">
+             
+                <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    
+                        <li><a href="#blog">Autor</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        
+                </ul>
+                <span class="menu"></span>
+
+            </div>
+       
+    </nav>
+
+ 
+    <main class="content-main">
+        <section>
+            <div class="apresentacao-autor" id="blog">
+                <h3>Olá, <strong>Dev</strong> Seja Bem Vindo!</h3>
+                <h2 >Blog Sobre Programação</h2>
+                <p>Minha intenção é compartilhar meu conhecimento e experiências sobre programação.</p>
+                <p>Espero que este blog seja útil para outros programadores, especialmente aqueles que estão começando na área.</p>
+              
+                    <div class="bg">
+                        <h3 class="sobretxt">Sobre o Autor</h3>
+                        <p> Meu nome é Mateus Evangelista Barroso, sou desenvolvedor web, tenho 24 anos faço faculdade de ADS na Uniasselvi </p>
+          
+                        </div>
+                
+            </div>
+
+
+            
+
+         <article id="sobre">
+
+            <h1>Flexbox CSS: Guia Completo sobre display flex propriedades, elementos e exemplos</h1>
+            <p>Gostaria de compartilhar meu conhecimento sobre Flexbox CSS com a comunidade de desenvolvedores.</p>
+            <p>O Flexbox, também chamado de Flex Box CSS ou css flexbox, foi criado para tornar a criação de layouts em CSS mais eficiente, facilitando o alinhamento e a distribuição de espaço entre itens dentro de um container, mesmo quando suas dimensões são desconhecidas ou mudam dinamicamente (daí o termo "flex").</p>
+            <p>O Flexbox CSS (Flexible Box) foi criado para simplificar coisas como centralizar elementos, ajustar tamanhos automáticos e criar layouts dinâmicos, graças ao uso da propriedade display: flex no CSS.</p>
+
+        </article>
+        <div class="hero-image" >
+                    <figure class="image-wrapper">
+                        <img src="foto.png" alt="Foto de perfil de Mateus" class="profile-photo">
+                        <div class="image-decoration"></div>
+                    </figure>
+                </div>
+
+        <article class="assunto">
+            <h2>Vamos colocar a mão na massa</h2>
+            <p>Quando usamos esse comando display: flex; os elementos vão ficar um do lado do outro no modo vertical</p>
+ <pre>
+<code>
+.container{
+display: flex; 
+flex-direction: row / row-reverse / column / column-reverse
+flex-wrap: nowrap/ wrap /wrap-reverse
+justify-content: flex-start / flex-end / center / space-between / space-around / space-evenly
+}
+</code>
+</pre>
+        </article>
+        </section>
+        <footer id="contato">
+
+             <p>&copy; 2026 Mateus Evangelista Barroso. Feito com amor  e código.</p>
+             <h4>Todos os direitos reservado</h4>
+        </footer>
+
+    </main>
+   
+</div>
+<script src="app.js"></script>
+</body>
+</html>
